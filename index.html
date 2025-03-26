@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kunj Kariya | Personal Portfolio</title>
+  <!-- Google Font: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS Animation Library CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <!-- Font Awesome (for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Set Inter font as default -->
+  <style> body { font-family: 'Inter', sans-serif; } </style>
+</head>
+<body class="bg-gray-900 text-gray-300">
+  <!-- Hero Section -->
+  <section id="hero" class="min-h-screen flex flex-col md:flex-row items-center justify-center px-6">
+    <div class="md:w-1/2 mb-8 md:mb-0 text-center md:text-left" data-aos="fade-right">
+      <h1 class="text-4xl sm:text-5xl font-bold text-white">Kunj Kariya</h1>
+      <p class="mt-2 text-xl sm:text-2xl text-gray-400">Software Developer based in Montreal</p>
+      <p class="mt-4 text-lg"><span class="text-gray-400">Tech Stack:</span> <span id="typed" class="text-teal-400"></span></p>
+      <div class="mt-6 flex justify-center md:justify-start space-x-6">
+        <a href="https://github.com/heyyykk3" target="_blank" rel="noopener" aria-label="GitHub" class="text-2xl text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/kunj-kariya-a6643525b/" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-2xl text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:kunjkariya@gmail.com" aria-label="Email" class="text-2xl text-gray-400 hover:text-white"><i class="fas fa-envelope"></i></a>
+        <a href="./assets/resume.pdf" download rel="noopener" aria-label="Download Resume" class="text-2xl text-gray-400 hover:text-white"><i class="fas fa-download"></i></a>
+      </div>
+    </div>
+    <div class="md:w-1/2 flex justify-center md:justify-end" data-aos="fade-left">
+      <img src="./assets/profile.jpg" alt="Profile Image" class="w-40 h-40 md:w-60 md:h-60 rounded-full object-cover shadow-lg" />
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-16 px-6">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-semibold text-white mb-4" data-aos="fade-up">About Me</h2>
+      <p class="mb-4 text-gray-300" data-aos="fade-up" data-aos-delay="100">
+        Hello! I'm Kunj, an aspiring software developer based in Montreal. I'm currently pursuing an AEC in IT Programming at LaSalle College, and I'm passionate about creating user-centric applications. I have experience with a range of technologies, from front-end frameworks like React.js to back-end development with Node.js and database management with SQL.
+      </p>
+      <p class="text-gray-300" data-aos="fade-up" data-aos-delay="200">
+        I love working on projects that solve real-world problems and continuously seek to expand my skill set. I'm known for a problem-solving mindset, teamwork, and effective communication. I'm currently open to opportunities, including co-op internships, where I can contribute, learn, and grow alongside a professional development team.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-semibold text-white mb-6" data-aos="fade-up">Skills</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="bg-gray-800 text-gray-200 text-center py-2 rounded">JavaScript</div>
+        <div class="bg-gray-800 text-gray-200 text-center py-2 rounded">React.js</div>
+        <div class="bg-gray-800 text-gray-200 text-center py-2 rounded">Swift</div>
+        <div class="bg-gray-800 text-gray-200 text-center py-2 rounded">Firebase</div>
+        <div class="bg-gray-800 text-gray-200 text-center py-2 rounded">Node.js</div>
+        <div class="bg-gray-800 text-gray-200 text-center py-2 rounded">SQL</div>
+        <div class="bg-gray-800 text-gray-200 text-center py-2 rounded">C#</div>
+        <div class="bg-gray-800 text-gray-200 text-center py-2 rounded">Material-UI</div>
+        <div class="bg-gray-800 text-gray-200 text-center py-2 rounded">Git</div>
+        <div class="bg-gray-800 text-gray-200 text-center py-2 rounded">Python</div>
+        <div class="bg-gray-800 text-gray-200 text-center py-2 rounded">Java</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-semibold text-white mb-4" data-aos="fade-up">Projects</h2>
+      <!-- Project Filter Buttons -->
+      <div class="mb-8 text-center" data-aos="fade-up" data-aos-delay="100">
+        <button class="filter-btn bg-teal-500 text-white border border-teal-500 px-4 py-2 rounded-full mr-2" data-filter="all">All</button>
+        <button class="filter-btn border border-teal-500 text-teal-500 px-4 py-2 rounded-full mr-2" data-filter="web">Web</button>
+        <button class="filter-btn border border-teal-500 text-teal-500 px-4 py-2 rounded-full" data-filter="ios">iOS</button>
+      </div>
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Project 1: Montreal Event Platform -->
+        <div class="project-card p-6 bg-gray-800 rounded-lg" data-category="web" data-aos="fade-up" data-aos-delay="0">
+          <img src="./assets/project-1.png" alt="Montreal Event Platform project screenshot" class="mb-4 w-full h-auto rounded" />
+          <h3 class="text-xl font-semibold text-gray-100">Montreal Event Platform</h3>
+          <p class="text-gray-300 text-sm mb-2">
+            A community-based web application for sharing and discovering local events. Built with React.js, Node.js, and SQL, featuring secure authentication and functionalities for posting events, commenting, and user profiles.
+          </p>
+          <div class="mb-3">
+            <span class="inline-block bg-gray-700 text-gray-300 text-xs px-2 py-1 rounded mr-2">React.js</span>
+            <span class="inline-block bg-gray-700 text-gray-300 text-xs px-2 py-1 rounded mr-2">Node.js</span>
+            <span class="inline-block bg-gray-700 text-gray-300 text-xs px-2 py-1 rounded">SQL</span>
+          </div>
+          <!-- GitHub link (if available) -->
+        </div>
+        <!-- Project 2: Tutorial Overlay App -->
+        <div class="project-card p-6 bg-gray-800 rounded-lg" data-category="ios" data-aos="fade-up" data-aos-delay="100">
+          <img src="./assets/project-2.jpg" alt="Tutorial Overlay App project screenshot" class="mb-4 w-full h-auto rounded" />
+          <h3 class="text-xl font-semibold text-gray-100">Tutorial Overlay App</h3>
+          <p class="text-gray-300 text-sm mb-2">
+            An iOS application built with Swift to guide users through interactive overlays. Provides a smooth multi-step onboarding experience with instructional pop-ups and highlights.
+          </p>
+          <div class="mb-3">
+            <span class="inline-block bg-gray-700 text-gray-300 text-xs px-2 py-1 rounded">Swift</span>
+          </div>
+          <!-- GitHub link not available -->
+        </div>
+        <!-- Project 3: Inventory Management System -->
+        <div class="project-card p-6 bg-gray-800 rounded-lg" data-category="web" data-aos="fade-up" data-aos-delay="200">
+          <img src="./assets/project-2.jpg" alt="Inventory Management System project screenshot" class="mb-4 w-full h-auto rounded" />
+          <h3 class="text-xl font-semibold text-gray-100">Inventory Management System</h3>
+          <p class="text-gray-300 text-sm mb-2">
+            A Java-based inventory management application for tracking products and stock levels. Implements features to add, update, and remove items, with a simple user interface and data persistence using MySQL.
+          </p>
+          <div class="mb-3">
+            <span class="inline-block bg-gray-700 text-gray-300 text-xs px-2 py-1 rounded mr-2">Java</span>
+            <span class="inline-block bg-gray-700 text-gray-300 text-xs px-2 py-1 rounded">MySQL</span>
+          </div>
+          <a href="https://github.com/heyyykk3/420PA3_KUNJ" target="_blank" rel="noopener" class="text-teal-400 hover:underline text-sm"><i class="fab fa-github mr-1"></i> GitHub</a>
+        </div>
+        <!-- Project 4: Galaxy Quiz iOS App -->
+        <div class="project-card p-6 bg-gray-800 rounded-lg" data-category="ios" data-aos="fade-up" data-aos-delay="300">
+          <img src="./assets/project-4.jpg" alt="Galaxy Quiz iOS App project screenshot" class="mb-4 w-full h-auto rounded" />
+          <h3 class="text-xl font-semibold text-gray-100">Galaxy Quiz iOS App</h3>
+          <p class="text-gray-300 text-sm mb-2">
+            A multiple-choice quiz game for iOS with a space theme. Built with Swift, it challenges users with trivia about galaxies and space, tracks their scores, and provides feedback for each answer.
+          </p>
+          <div class="mb-3">
+            <span class="inline-block bg-gray-700 text-gray-300 text-xs px-2 py-1 rounded">Swift</span>
+          </div>
+          <!-- GitHub link not available -->
+        </div>
+        <!-- Project 5: BMI Calculator (iOS) -->
+        <div class="project-card p-6 bg-gray-800 rounded-lg" data-category="ios" data-aos="fade-up" data-aos-delay="400">
+          <img src="./assets/project-5.jpg" alt="BMI Calculator iOS project screenshot" class="mb-4 w-full h-auto rounded" />
+          <h3 class="text-xl font-semibold text-gray-100">BMI Calculator (iOS)</h3>
+          <p class="text-gray-300 text-sm mb-2">
+            A simple iOS app built with Swift that calculates Body Mass Index (BMI) from user input. Provides the BMI value and corresponding category to help users understand their results.
+          </p>
+          <div class="mb-3">
+            <span class="inline-block bg-gray-700 text-gray-300 text-xs px-2 py-1 rounded">Swift</span>
+          </div>
+          <a href="https://github.com/heyyykk3/AreenRealCalculator" target="_blank" rel="noopener" class="text-teal-400 hover:underline text-sm"><i class="fab fa-github mr-1"></i> GitHub</a>
+        </div>
+        <!-- Project 6: Tip Calculator (iOS) -->
+        <div class="project-card p-6 bg-gray-800 rounded-lg" data-category="ios" data-aos="fade-up" data-aos-delay="500">
+          <img src="./assets/project-6.jpg" alt="Tip Calculator iOS project screenshot" class="mb-4 w-full h-auto rounded" />
+          <h3 class="text-xl font-semibold text-gray-100">Tip Calculator (iOS)</h3>
+          <p class="text-gray-300 text-sm mb-2">
+            A handy iOS app for calculating tips on bills. Built with Swift, it allows users to input a bill amount and select a tip percentage to instantly see the tip amount and total payable.
+          </p>
+          <div class="mb-3">
+            <span class="inline-block bg-gray-700 text-gray-300 text-xs px-2 py-1 rounded">Swift</span>
+          </div>
+          <a href="https://github.com/heyyykk3/tipcalc" target="_blank" rel="noopener" class="text-teal-400 hover:underline text-sm"><i class="fab fa-github mr-1"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section id="experience" class="py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-semibold text-white mb-6" data-aos="fade-up">Work Experience</h2>
+      <ul class="relative border-l border-gray-700 ml-4">
+        <li class="mb-10 ml-8 relative" data-aos="fade-up" data-aos-delay="0">
+          <div class="absolute -left-4 top-1.5 w-3 h-3 bg-teal-500 rounded-full"></div>
+          <p class="mb-1 text-sm text-gray-400">Sep 2024 – Present</p>
+          <h3 class="text-lg font-semibold text-gray-200">Food Service Assistant, Tommy Cafe (Montreal)</h3>
+          <p class="text-gray-400">Prepared food and maintained quality standards in a busy setting. Collaborated with staff and managed multiple tasks under pressure.</p>
+        </li>
+        <li class="mb-10 ml-8 relative" data-aos="fade-up" data-aos-delay="100">
+          <div class="absolute -left-4 top-1.5 w-3 h-3 bg-teal-500 rounded-full"></div>
+          <p class="mb-1 text-sm text-gray-400">Dec 2023 – Present</p>
+          <h3 class="text-lg font-semibold text-gray-200">Food Service Assistant, Subway (Montreal)</h3>
+          <p class="text-gray-400">Provided excellent customer service and supported team operations. Assisted in training new hires and managing peak hours.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-semibold text-white mb-6" data-aos="fade-up">Education</h2>
+      <ul class="relative border-l border-gray-700 ml-4">
+        <li class="mb-10 ml-8 relative" data-aos="fade-up" data-aos-delay="0">
+          <div class="absolute -left-4 top-1.5 w-3 h-3 bg-teal-500 rounded-full"></div>
+          <p class="mb-1 text-sm text-gray-400">Dec 2023 – Present</p>
+          <h3 class="text-lg font-semibold text-gray-200">AEC – IT Programmer Analyst, LaSalle College (Montreal)</h3>
+          <p class="text-gray-400">Coursework focuses on Web Development, SQL, and OOP.</p>
+        </li>
+        <li class="mb-10 ml-8 relative" data-aos="fade-up" data-aos-delay="100">
+          <div class="absolute -left-4 top-1.5 w-3 h-3 bg-teal-500 rounded-full"></div>
+          <p class="mb-1 text-sm text-gray-400">Completed 2021</p>
+          <h3 class="text-lg font-semibold text-gray-200">Higher Secondary Certificate, Gujarat (India)</h3>
+          <p class="text-gray-400">Completed higher secondary education with a focus on science and mathematics.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Certifications Section (if any) -->
+  <!-- 
+  <section id="certifications" class="py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-semibold text-white mb-4">Certifications</h2>
+      <p class="text-gray-400">[List of certifications or courses]</p>
+    </div>
+  </section>
+  -->
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-6">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-semibold text-white mb-6" data-aos="fade-up">Contact Me</h2>
+      <form action="https://formspree.io/f/XXXXXXXX" method="POST" data-aos="fade-up" data-aos-delay="100">
+        <!-- Formspree endpoint: replace XXXXXXXX with your form ID -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+          <div class="flex flex-col">
+            <label for="name" class="text-sm text-gray-200 mb-1">Name</label>
+            <input type="text" id="name" name="name" required class="p-3 rounded bg-gray-800 text-gray-100 border border-gray-600 focus:outline-none focus:border-teal-500" />
+          </div>
+          <div class="flex flex-col">
+            <label for="email" class="text-sm text-gray-200 mb-1">Email</label>
+            <input type="email" id="email" name="email" required class="p-3 rounded bg-gray-800 text-gray-100 border border-gray-600 focus:outline-none focus:border-teal-500" />
+          </div>
+        </div>
+        <div class="flex flex-col mb-4">
+          <label for="message" class="text-sm text-gray-200 mb-1">Message</label>
+          <textarea id="message" name="message" rows="5" required class="p-3 rounded bg-gray-800 text-gray-100 border border-gray-600 focus:outline-none focus:border-teal-500"></textarea>
+        </div>
+        <!-- Formspree will handle form submission -->
+        <button type="submit" class="bg-teal-600 hover:bg-teal-500 text-white font-semibold py-2 px-6 rounded">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 px-6 bg-gray-800">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="mb-4 flex justify-center space-x-6">
+        <a href="https://github.com/heyyykk3" target="_blank" rel="noopener" class="text-xl text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/kunj-kariya-a6643525b/" target="_blank" rel="noopener" class="text-xl text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:kunjkariya@gmail.com" class="text-xl text-gray-400 hover:text-white"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="text-sm text-gray-500">© <span id="year"></span> Kunj Kariya. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-top Button -->
+  <button id="scrollTopBtn" class="hidden fixed bottom-5 right-5 p-3 rounded-full bg-teal-600 text-white hover:bg-teal-500">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <!-- Typed.js library for typing animation -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    // Initialize typing animation for tech stack
+    var typed = new Typed('#typed', {
+      strings: ['React.js', 'Node.js', 'Swift', 'Firebase', 'SQL', 'C#'],
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 1000,
+      loop: true,
+      showCursor: true,
+      cursorChar: '|'
+    });
+  </script>
+  <!-- AOS animation library script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // Initialize AOS animations
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+  <!-- Projects filter functionality -->
+  <script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const category = btn.getAttribute('data-filter');
+        // Update active button styles
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-teal-500', 'text-white');
+          b.classList.add('text-teal-500');
+        });
+        btn.classList.remove('text-teal-500');
+        btn.classList.add('bg-teal-500', 'text-white');
+        // Show/hide projects based on category
+        projectCards.forEach(card => {
+          const cardCategory = card.getAttribute('data-category');
+          if (category === 'all' || cardCategory === category) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
+  <!-- Scroll-to-top button behavior -->
+  <script>
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 100) {
+        scrollBtn.classList.remove('hidden');
+      } else {
+        scrollBtn.classList.add('hidden');
+      }
+    });
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+  <!-- Set current year in footer -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
